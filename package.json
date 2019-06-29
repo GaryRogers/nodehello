@@ -1,0 +1,10 @@
+{
+    "name": "nodehello",
+    "version": "1.0.0",
+    "description": "Simple Hello World in a Kubernetes Container",
+    "author": "Gary Rogers",
+    "main": "Main.js",
+    "scripts": {
+        "start": "node Main.js"
+    }
+}

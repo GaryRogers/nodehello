@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodehello
+  labels:
+    app: nodehello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodehello
+  template:
+    metadata:
+      labels:
+        app: nodehello
+    spec:
+      containers:
+      - name: nodehello
+        image: localhost:5000/nodehello:latest
+        resources:
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
